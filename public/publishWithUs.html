@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journal Portal - Sciencethics.com</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/aos.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="top-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div id="datetime"></div>
+      <div class="socials">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <header class="header-main">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-4 mb-3 mb-lg-0">
+          <h3 class="fw-bold mb-0" style="color: var(--primary-green);">
+            SCIENCETHICS<span style="color: #444;">.COM</span>
+          </h3>
+          <small class="text-muted fw-bold" style="letter-spacing: 1px;">BRINGING SCIENCE AND PEOPLE TOGETHER</small>
+        </div>
+        <div class="col-lg-8">
+          <div class="header-banner">
+            <div>
+              <h4 class="mb-0 fw-bold">PUBLISH WITH US</h4>
+              <p class="small mb-0 opacity-75">Open Access Peer-Reviewed Journals</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="bi bi-unlock-fill fs-1 me-3 text-warning"></i>
+              <div class="text-end">
+                <span class="d-block fw-bold">OPEN</span>
+                <span class="d-block fw-bold" style="margin-top:-5px">ACCESS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg main-nav p-0 sticky-top shadow">
+    <div class="container">
+      <button class="navbar-toggler border-white my-2" type="button" data-bs-toggle="collapse"
+        data-bs-target="#mainNav">
+        <i class="bi bi-list text-white"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/journals">Journals</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Who We Serve</a>
+            <ul class="dropdown-menu border-0 shadow">
+              <li><a class="dropdown-item" href="/overview-we-serve">Overview</a></li>
+              <li><a class="dropdown-item" href="/researchers">Researchers</a></li>
+              <li><a class="dropdown-item" href="/authors">Authors</a></li>
+              <li><a class="dropdown-item" href="/reviewers">Reviewers</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Who We Are</a>
+            <ul class="dropdown-menu border-0 shadow">
+              <li><a class="dropdown-item" href="/overview-we-are">Overview</a></li>
+              <li><a class="dropdown-item" href="/about-us">About Us</a></li>
+              <li><a class="dropdown-item" href="/open-access">Open Access</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="/publish-with-us">Publish With Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact-us">Contact Us</a></li>
+        </ul>
+        <form class="d-flex ms-lg-3 my-2 my-lg-0" role="search">
+          <div class="search-wrapper">
+            <i class="bi bi-search"></i>
+            <input type="search" class="form-control form-control-sm" placeholder="Search journals..."
+              aria-label="Search">
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-section py-5" data-aos="fade-up">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h1 class="display-4 fw-bold" style="color: var(--primary-green);">
+            Publish With Us
+          </h1>
+          <div style="width: 150px; height: 3px; background: var(--primary-green); margin: 8px auto 0;"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="py-5" data-aos="fade-up">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- ================= LEFT: CONTACT INFO ================= -->
+        <div class="col-md-4">
+          <div class="d-flex justify-content-between align-items-end mb-3">
+            <div>
+              <h4 class="fw-bold mb-0">Latest Updates</h4>
+              <div style="width:40px;height:3px;background:var(--primary-green);margin-top:6px"></div>
+            </div>
+            <div>
+              <button class="btn btn-sm btn-outline-success rounded-circle" data-bs-target="#newsCarousel"
+                data-bs-slide="prev">
+                <i class="bi bi-chevron-left"></i>
+              </button>
+              <button class="btn btn-sm btn-outline-success rounded-circle" data-bs-target="#newsCarousel"
+                data-bs-slide="next">
+                <i class="bi bi-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+              <!-- SLIDE 1 -->
+              <div class="carousel-item active">
+                <div class="d-grid gap-3">
+
+                  <!-- NEWS 1 -->
+                  <div class="card news-slider-card overflow-hidden">
+                    <div class="row g-0">
+                      <div class="col-4">
+                        <img src="assets/img/news1.jpg" class="img-fluid h-100 w-100"
+                          style="object-fit:cover;min-height:100px" alt="">
+                      </div>
+                      <div class="col-8">
+                        <div class="card-body py-2 px-3">
+                          <h6 class="fw-bold mb-1 small">
+                            New Impact Factor Released for 2025
+                          </h6>
+                          <p class="text-muted small mb-1" style="line-height:1.3">
+                            Our clinical journals recorded a 20% increase in citations this year.
+                          </p>
+                          <a href="/news" class="text-success small fw-bold">
+                            Read More →
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- NEWS 2 -->
+                  <div class="card news-slider-card overflow-hidden">
+                    <div class="row g-0">
+                      <div class="col-4">
+                        <img
+                          src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
+                          class="img-fluid h-100 w-100" style="object-fit:cover;min-height:100px" alt="">
+                      </div>
+                      <div class="col-8">
+                        <div class="card-body py-2 px-3">
+                          <h6 class="fw-bold mb-1 small">
+                            Holiday Submission Schedule 2025
+                          </h6>
+                          <p class="text-muted small mb-1" style="line-height:1.3">
+                            Editorial processing will be limited during the winter break period.
+                          </p>
+                          <a href="/news" class="text-success small fw-bold">
+                            Read More →
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- NEWS 3 -->
+                  <div class="card news-slider-card overflow-hidden">
+                    <div class="row g-0">
+                      <div class="col-4">
+                        <img
+                          src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
+                          class="img-fluid h-100 w-100" style="object-fit:cover;min-height:100px" alt="">
+                      </div>
+                      <div class="col-8">
+                        <div class="card-body py-2 px-3">
+                          <h6 class="fw-bold mb-1 small">
+                            Holiday Submission Schedule 2025
+                          </h6>
+                          <p class="text-muted small mb-1" style="line-height:1.3">
+                            Editorial processing will be limited during the winter break period.
+                          </p>
+                          <a href="/news" class="text-success small fw-bold">
+                            Read More →
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- SLIDE 2 -->
+              <div class="carousel-item">
+                <div class="d-grid gap-3">
+
+                  <!-- NEWS 3 -->
+                  <div class="card news-slider-card overflow-hidden">
+                    <div class="row g-0">
+                      <div class="col-4">
+                        <img src="assets/img/news1.jpg" class="img-fluid h-100 w-100"
+                          style="object-fit:cover;min-height:100px" alt="">
+                      </div>
+                      <div class="col-8">
+                        <div class="card-body py-2 px-3">
+                          <h6 class="fw-bold mb-1 small">
+                            New Impact Factor Released for 2026
+                          </h6>
+                          <p class="text-muted small mb-1" style="line-height:1.3">
+                            Continued growth reflects rising global research engagement.
+                          </p>
+                          <a href="/news" class="text-success small fw-bold">
+                            Read More →
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- NEWS 4 -->
+                  <div class="card news-slider-card overflow-hidden">
+                    <div class="row g-0">
+                      <div class="col-4">
+                        <img
+                          src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
+                          class="img-fluid h-100 w-100" style="object-fit:cover;min-height:100px" alt="">
+                      </div>
+                      <div class="col-8">
+                        <div class="card-body py-2 px-3">
+                          <h6 class="fw-bold mb-1 small">
+                            Holiday Submission Schedule 2026
+                          </h6>
+                          <p class="text-muted small mb-1" style="line-height:1.3">
+                            Please plan submissions ahead of editorial holiday closures.
+                          </p>
+                          <a href="/news" class="text-success small fw-bold">
+                            Read More →
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= RIGHT: SUBMIT FORM ================= -->
+        <div class="col-md-8">
+
+          <!-- ===== HEADER ===== -->
+          <h5 class="fw-bold text-uppercase mb-2">Submit Your Paper Here</h5>
+          <div style="width:40px;height:3px;background:var(--primary-green);margin-bottom:16px"></div>
+
+          <p class="small">
+            Sciencethics welcomes original research articles, clinical studies,
+            review articles, case reports, and perspectives that contribute to advancing
+            knowledge and understanding in medical and scientific research.
+          </p>
+
+          <!-- ===== FORM ===== -->
+          <form class="mt-4">
+            <div class="row g-3">
+
+              <!-- First & Last Name -->
+              <div class="col-md-6">
+                <label class="form-label small fw-bold">First name<span class="text-danger">*</span></label>
+                <input type="text" class="form-control form-control-sm">
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label small fw-bold">Last name<span class="text-danger">*</span></label>
+                <input type="text" class="form-control form-control-sm">
+              </div>
+
+              <!-- Email -->
+              <div class="col-12">
+                <label class="form-label small fw-bold">Email<span class="text-danger">*</span></label>
+                <input type="email" class="form-control form-control-sm">
+              </div>
+
+              <!-- Phone -->
+              <div class="col-12">
+                <label class="form-label small fw-bold">Phone number<span class="text-danger">*</span></label>
+                <input type="text" class="form-control form-control-sm">
+              </div>
+
+              <!-- Country -->
+              <div class="col-12">
+                <label class="form-label small fw-bold">Country/Region<span class="text-danger">*</span></label>
+                <input type="text" class="form-control form-control-sm">
+              </div>
+
+              <!-- Address -->
+              <div class="col-12">
+                <label class="form-label small fw-bold">Address<span class="text-danger">*</span></label>
+                <input type="text" class="form-control form-control-sm">
+              </div>
+
+              <!-- Journal Select -->
+              <div class="col-12">
+                <label class="form-label small fw-bold">Select Journal Name<span class="text-danger">*</span></label>
+                <select class="form-select form-select-sm">
+                  <option selected>Please Select</option>
+                  <option>Journal of Medical Science</option>
+                  <option>Journal of Clinical Research</option>
+                  <option>Journal of Health Studies</option>
+                </select>
+              </div>
+
+              <!-- Article Title -->
+              <div class="col-12">
+                <label class="form-label small fw-bold">Article Title<span class="text-danger">*</span></label>
+                <input type="text" class="form-control form-control-sm">
+              </div>
+
+              <!-- Abstract -->
+              <div class="col-12">
+                <label class="form-label small fw-bold">Article Abstract<span class="text-danger">*</span></label>
+                <textarea class="form-control form-control-sm" rows="6"></textarea>
+              </div>
+
+              <!-- Article Type -->
+              <div class="col-12">
+                <label class="form-label small fw-bold">Article Type<span class="text-danger">*</span></label>
+                <select class="form-select form-select-sm">
+                  <option selected>Please Select</option>
+                  <option>Original Research</option>
+                  <option>Review Article</option>
+                  <option>Case Report</option>
+                  <option>Short Communication</option>
+                </select>
+              </div>
+
+              <!-- Upload -->
+              <div class="col-12">
+                <label class="form-label small fw-bold">Upload Files<span class="text-danger">*</span></label>
+                <input type="file" class="form-control form-control-sm" multiple>
+                <small class="text-muted d-block mt-1">
+                  If you want to submit more than one file, please use the CTRL key to select
+                  all the files you need to upload.
+                </small>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="col-12 mt-4">
+                <button type="submit" class="btn px-4 py-2 fw-bold text-white"
+                  style="background:var(--primary-green);border:none">
+                  Submit
+                </button>
+              </div>
+
+
+            </div>
+          </form>
+
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <footer class="site-footer">
+    <div class="container-fluid px-0">
+      <div class="row g-0">
+
+        <!-- LEFT FOOTER (BLUE) -->
+        <div class="col-lg-4 footer-left">
+          <div class="p-5 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex align-items-center mb-4">
+                <!-- <img src="logo.png" alt="Logo" height="40" class="me-2"> -->
+                <h5 class="mb-0 fw-bold text-white">Sciencethics.com</h5>
+              </div>
+
+              <p class="small text-light opacity-75">
+                Sciencethics is dedicated to the advancement of scientific
+                knowledge through high-quality peer-reviewed publications and
+                global academic collaboration.
+              </p>
+            </div>
+
+            <!-- SOCIAL -->
+            <div class="mt-4">
+              <a href="#" class="footer-social"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="footer-social"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="footer-social"><i class="bi bi-twitter-x"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT FOOTER (WHITE) -->
+        <div class="col-lg-8 footer-right">
+          <div class="p-5">
+            <div class="row">
+
+              <div class="col-md-3 col-6 mb-4">
+                <h6 class="footer-title">USEFUL LINKS</h6>
+                <ul class="footer-links">
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/about-us">About Us</a></li>
+                  <li><a href="/contact-us">Contact Us</a></li>
+                  <li><a href="/journals">Journals</a></li>
+                </ul>
+              </div>
+
+              <div class="col-md-3 col-6 mb-4">
+                <h6 class="footer-title">RESOURCES</h6>
+                <ul class="footer-links">
+                  <li><a href="/researchers">Researchers</a></li>
+                  <li><a href="/authors">Authors</a></li>
+                  <li><a href="/reviewers">Reviewers</a></li>
+                </ul>
+              </div>
+
+              <div class="col-md-3 col-6 mb-4">
+                <h6 class="footer-title">ABOUT US</h6>
+                <ul class="footer-links">
+
+                  <li><a href="/open-access">Open Access</a></li>
+                  <li><a href="/manuscript-guidelines">Manuscript Guidelines</a></li>
+                  <li><a href="/publish-with-us">Publish With Us</a></li>
+                </ul>
+              </div>
+
+              <div class="col-md-3 col-6 mb-4">
+                <h6 class="footer-title">SUPPORT</h6>
+                <ul class="footer-links">
+
+                  <li><a href="/support">Support</a></li>
+                  <li><a href="/privacy-policy">Privacy Policy</a></li>
+                  <li><a href="/tos">Terms of Services</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+            <hr>
+
+            <p class="small text-muted mb-0">
+              © 2025 Sciencethics.com. All Rights Reserved. | Terms of Use
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/lottie-player.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

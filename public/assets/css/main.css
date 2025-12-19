@@ -1,0 +1,292 @@
+:root {
+      --primary-green: #005751;
+      --accent-orange: #f39c12;
+      --light-bg: #f8fbfb;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #333;
+    }
+
+    /* --- HEADER & NAVBAR STYLE --- */
+    .top-bar {
+      background-color: var(--primary-green);
+      color: white;
+      font-size: 0.8rem;
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .top-bar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      transition: 0.3s;
+    }
+
+    .header-main {
+      padding: 20px 0;
+      background: white;
+    }
+
+    .header-banner {
+      background: linear-gradient(135deg, #005751 0%, #004641 100%);
+      color: white;
+      border-radius: 6px;
+      padding: 18px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .main-nav {
+      background-color: var(--primary-green);
+    }
+
+    .search-wrapper {
+      position: relative;
+    }
+
+    .search-wrapper i {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      color: #888;
+      font-size: 0.85rem;
+      pointer-events: none;
+    }
+
+    .search-wrapper input {
+      padding-left: 32px;
+      border-radius: 6px;
+      /* formal / akademik */
+      border: 1px solid #ddd;
+    }
+
+    .search-wrapper input:focus {
+      box-shadow: none;
+      border-color: var(--primary-green);
+    }
+
+    .overview-card img {
+      transition: transform 0.3s ease;
+    }
+
+    .overview-card:hover img {
+      transform: scale(1.03);
+    }
+
+    .overview-card h6 {
+      margin-bottom: 6px;
+    }
+
+
+
+    /* PERBAIKAN: Gunakan selector spesifik agar tidak merusak tab */
+    .main-nav .nav-link {
+      color: white !important;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 15px 18px !important;
+      transition: 0.3s;
+    }
+
+    .main-nav .nav-link:hover {
+      background-color: #004641;
+      /* color: var(--accent-orange) !important; */
+    }
+
+    /* --- HERO & NEWS SECTION --- */
+    .hero-section {
+      background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://www.transparenttextures.com/patterns/cubes.png');
+      padding: 80px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .news-section {
+      background-color: var(--light-bg);
+      padding: 50px 0;
+    }
+
+    .news-slider-card {
+      background: white;
+      border: none;
+
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    /* --- JOURNALS & ARTICLES --- */
+    /* Styling Kartu Jurnal Lebih Elegan */
+    .journal-card {
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      /* Sudut lebih tajam/formal */
+      transition: all 0.4s ease;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .journal-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+      border-color: var(--primary-green);
+    }
+
+    /* Area Sampul (Mockup Buku) */
+    .journal-cover-area {
+      height: 200px;
+      background: #f8f9fa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 4px solid var(--primary-green);
+      /* Aksen garis bawah */
+    }
+
+    /* Ornamen ala Sampul Jurnal */
+    .journal-cover-area::after {
+      content: "JOURNAL";
+      position: absolute;
+      bottom: 10px;
+      right: -10px;
+      font-size: 3rem;
+      font-weight: 900;
+      color: rgba(0, 0, 0, 0.03);
+      transform: rotate(-15deg);
+    }
+
+    .journal-card .card-body {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .journal-card .journal-action {
+      margin-top: auto;
+    }
+
+
+    .journal-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--primary-green);
+      min-height: 3rem;
+      /* Menjaga tinggi judul agar sejajar */
+      line-height: 1.4;
+    }
+
+    .journal-meta {
+      font-size: 0.75rem;
+      color: #777;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .btn-journal-action {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 600;
+      border-radius: 0;
+      /* Gaya formal */
+    }
+
+    /* PERBAIKAN: Selector Spesifik untuk Tab Artikel */
+    .article-tabs .nav-link {
+      color: #555 !important;
+      /* Warna teks abu-abu tua agar terlihat di bg putih */
+      text-transform: none;
+      font-weight: 600;
+      border: none !important;
+      border-bottom: 3px solid transparent !important;
+      padding: 10px 20px !important;
+    }
+
+    .article-tabs .nav-link.active {
+      color: var(--primary-green) !important;
+      border-bottom: 3px solid var(--primary-green) !important;
+      background: none !important;
+    }
+
+    .article-tabs .nav-link:hover {
+      color: var(--primary-green) !important;
+      background: #f0f0f0 !important;
+    }
+
+    /* --- FOOTER --- */
+
+
+    .site-footer {
+      font-size: 0.9rem;
+    }
+
+    /* LEFT */
+    .footer-left {
+      background-color: var(--primary-green);
+      /* sesuaikan brand */
+    }
+
+    .footer-social {
+      display: inline-flex;
+      width: 36px;
+      height: 36px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+      margin-right: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .footer-social:hover {
+      background: #fff;
+      color: #005b8f;
+    }
+
+    /* RIGHT */
+    .footer-right {
+      background-color: #ffffff;
+    }
+
+    .footer-title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.6rem;
+    }
+
+    .footer-links a {
+      color: #333;
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: color 0.2s ease;
+    }
+
+    .footer-links a::before {
+      content: "›";
+      margin-right: 6px;
+      color: var(--primary-green);
+    }
+
+    .footer-links a:hover {
+      color: var(--primary-green);
+    }
